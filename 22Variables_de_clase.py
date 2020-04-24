@@ -10,9 +10,8 @@ class Circulo:
         self.radio = radio
     
     def area(self):
-        return self.radio * self.radio * self.pi
+        return self.radio * self.radio * self.pi()
 
+print(Circulo.pi())
 circulo_uno = Circulo(4)
-
-print(Circulo.pi) #Usamos el nombre de la clase mas el nombre de la variable para hacer uso de ella
-print(circulo_uno.area())
+print('El area del circulo es: ',circulo_uno.area())
