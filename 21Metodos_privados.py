@@ -1,5 +1,5 @@
 class Usuario:
-    
+
     def __init__(self, username, password, email):
         self.username = username
         self.__password = self.__generar_password(password)
@@ -12,13 +12,13 @@ class Usuario:
     def password(self):
         return self.__password
 
-    @property.setter
+    @password.setter
     def password(self, valor):
         self.__password = self.__generar_password(valor)
 
 jorge = Usuario('Jorge', 'jorge0110', 'jorge@outlook.com')
 print(jorge.password)
 jorge.password = 'Nuevo password'
-print(jorge.newPassword)
+print(jorge.password)
 
     
