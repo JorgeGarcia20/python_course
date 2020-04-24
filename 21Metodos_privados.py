@@ -1,4 +1,5 @@
 class Usuario:
+    
     def __init__(self, username, password, email):
         self.username = username
         self.__password = self.__generar_password(password)
